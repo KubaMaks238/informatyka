@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Hobby - Pływanie i Kolarstwo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hobby-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .hobby-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: #0077b6;
+            border-bottom: 2px solid #00b4d8;
+            padding-bottom: 10px;
+        }
+        
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            display: block;
+            margin: 15px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .gallery img {
+            width: 30%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        footer {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        
+        .fun-fact {
+            background-color: #caf0f8;
+            padding: 15px;
+            border-left: 5px solid #00b4d8;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        /* Style dla ankiety */
+        .survey {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 30px;
+            border: 2px dashed #00b4d8;
+        }
+        
+        .survey h2 {
+            color: #023e8a;
+            text-align: center;
+        }
+        
+        .survey-question {
+            margin-bottom: 20px;
+        }
+        
+        .survey-question label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #0077b6;
+        }
+        
+        .survey input[type="text"],
+        .survey input[type="email"],
+        .survey select,
+        .survey textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #90e0ef;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .survey-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .survey-options label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .submit-btn {
+            background-color: #00b4d8;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 20px auto 0;
+        }
+        
+        .submit-btn:hover {
+            background-color: #0077b6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NASZE HOBBY: PŁYWANIE I KOLARSTWO 🏊‍♂️🚴‍♂️</h1>
+        <p>Poznaj nasze dwie największe pasje!</p>
+    </header>
+    
+    <div class="container">
+        <section class="hobby-section">
+            <h2><span class="emoji">🏊‍♂️</span>Pływanie</h2>
+            <p>Maks~Pływam od 7 roku życia i uwielbiam to! Uwielbiam pływać stylem motylkowym. </p>
+            
+            <div class="fun-fact">
+                <strong>Ciekawostka:</strong> Wiesz, że Michael Phelps, największy pływak wszechczasów, zdobył 23 złote medale olimpijskie?
+            </div>
+            
+            <img src="https://ocdn.eu/pulscms-transforms/1/Tm5k9kqTURBXy84NjQxZGE2ZTc1MmE5ZDk1MmRjMjE4MTQ0M2IxNGQ0YS5qcGVnkpUDACPNBADNAkCTBc0DmM0BzN4AAqEwBqExAQ">
+            
+            <h3>Dlaczego warto pływać?</h3>
+            <ul>
+                <li>Rozwija wszystkie mięśnie ciała</li>
+                <li>Jest świetne dla kręgosłupa</li>
+                <li>Można trenować cały rok</li>
+                <li>Relaksuje i odstresowuje</li>
+            </ul>
+            
+            <div class="gallery">
+                <img src="https://d-art.ppstatic.pl/kadry/k/r/1/d2/0a/64c10fa28c8f0_o_xlarge.jpg" alt="Basen">
+                <img src="https://spartiaci.pl/wp-content/uploads/2023/11/xBG-0244-1168x600.jpg.pagespeed.ic.t--drBJiWw.webp" alt="Zawody pływackie">
+                <img src="https://contents.mediadecathlon.com/p2445904/k$559193c6adf772cbaec378adc275dfb3/1800x0/2736pt1824/5306xcr3648/default.jpg?format=auto" alt="Skok do wody">
+            </div>
+        </section>
+        
+        <section class="hobby-section">
+            <h2><span class="emoji">🚴‍♂️</span>Kolarstwo</h2>
+            <p>Kuba~Rower to moja pasja od dziecka! Uwielbiam długie tripy po lasach i asfalcie. </p>
+            
+            <div class="fun-fact">
+                <strong>Ciekawostka:</strong> Najdłuższy rower świata ma 35,79 metra i został zbudowany w Australii. Mógł pomieścić 20 osób!
+            </div>
+            
+            <img src="https://www.podatki.biz/media/Image/cyclist-pedaling-racing-bike-outdoors1.jpg" alt="Rower w górach">
+            
+            <h3>Moje osiągnięcia w kolarstwie:</h3>
+            <ol>
+                <li>Najwięcej przejechałem 100 km w jeden dzień</li>
+                <li>Zwiedziłem na rowerze 4 województw</li>
+            </ol>
+            
+            <h3>Mój wymarzony rower:</h3>
+            <p>Marzę o rowerze szosowym <strong>ROMET HURAGAN 4</strong> Kosztuje dużo, ale może kiedyś... </p>
+            
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Rower szosowy">
+                <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Rower górski">
+                <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Wycieczka rowerowa">
+            </div>
+        </section>
+        
+        <section class="hobby-section">
+            <h2><span class="emoji">❤️</span>Połączenie obu hobby</h2>
+            <p>Pływanie i kolarstwo świetnie się uzupełniają! </p>
+            <p>Korzyści z uprawiania obu sportów:</p>
+            <ul>
+                <li>Lepsza wydolność organizmu</li>
+                <li>Różnorodność treningów</li>
+                <li>Rozwój różnych partii mięśni</li>
+                <li>Możliwość trenowania w różnych miejscach</li>
+            </ul>
+            <img src="https://s3.tvp.pl/images2/3/d/2/uid_3d2b5d0dc3decb03cf7822f0aefc041e1533536594915_width_1600_play_0_pos_0_gs_0_height_900_get.jpg" alt="Triathlon">
+        </section>
+        
+        <!-- Sekcja z ankietą -->
+        <section class="hobby-section survey">
+            <h2><span class="emoji">📝</span>Ankieta o Twoim hobby sportowym</h2>
+            <p>Podziel się swoimi doświadczeniami! Chętnie poznam Twoje opinie.</p>
+            
+            <form id="sport-survey">
+                <div class="survey-question">
+                    <label for="email">Twój email (opcjonalnie):</label>
+                    <input type="email" id="email" name="email" placeholder="np. przyklad@email.com">
+                </div>
+                
+                <div class="survey-question">
+                    <label>1. Który sport bardziej Ci się podoba?</label>
+                    <div class="survey-options">
+                        <label>
+                            <input type="radio" name="fav_sport" value="pływanie"> Pływanie 🏊‍♂️
+                        </label>
+                        <label>
+                            <input type="radio" name="fav_sport" value="kolarstwo"> Kolarstwo 🚴‍♂️
+                        </label>
+                        <label>
+                            <input type="radio" name="fav_sport" value="oba"> Oba tak samo! 
+                        </label>
+                        <label>
+                            <input type="radio" name="fav_sport" value="zaden"> Żaden, wolę inne sporty
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="survey-question">
+                    <label for="frequency">2. Jak często uprawiasz sport?</label>
+                    <select id="frequency" name="frequency">
+                        <option value="">-- Wybierz --</option>
+                        <option value="daily">Codziennie</option>
+                        <option value="weekly">Kilka razy w tygodniu</option>
+                        <option value="monthly">Kilka razy w miesiącu</option>
+                        <option value="rarely">Rzadko</option>
+                    </select>
+                </div>
+                
+                <div class="survey-question">
+                    <label for="advice">3. Jakie masz porady dla początkujących sportowców?</label>
+                    <textarea id="advice" name="advice" rows="4" placeholder="Twoje porady..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Wyślij odpowiedzi 🚀</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Strona stworzona przez Kube i Maksa </p>
+    </footer>
+    
+    <script>
+        // Prosta obsługa formularza
+        document.getElementById('sport-survey').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Dzięki za wypełnienie ankiety! Twoje odpowiedzi zostały "wysłane"');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
